@@ -1,0 +1,100 @@
+.header{
+  padding: 40px;
+  text-align: center;
+  background: url("sky.jpg") center/cover fixed no-repeat;
+  font-family: 'mushroom-font', cursive;
+  font-size: 60px;
+  color: goldenrod;
+  -webkit-text-stroke: 0.5px rgb(122, 85, 21);
+}
+
+body {
+  margin: 0;
+  font-family: 'mushroom-font';
+  src: url('mushroom-font/Mushroom-PK8o2.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* SKY */
+.sky {
+  position: relative;
+  background: url("sky.jpg") center/cover fixed no-repeat;
+}
+
+/* CONTINUOUS STEM */
+.stem {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2010px;
+
+  /* this is the key */
+  height: 100%;
+  background: url("stem.png") repeat-y center top;
+  background-size: 100% auto;
+
+  z-index: 1;
+}
+
+/* SECTIONS */
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* TEXT */
+.section p {
+  font-family: 'mushroom-font', cursive;
+  font-size: 6rem;
+  color:rgb(189, 158, 128);
+  -webkit-text-stroke: 2px rgb(234, 192, 165);
+  padding: 10px 20px;
+  border-radius: 10px;
+  
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+}
+
+.mushroom-top {
+  width: 2010px;
+}
+
+#p5-container canvas{
+  background: transparent;
+}
+
+.ground-section{
+  width: 100%;
+  height: 50px; 
+  min-height: 100vh;
+  display: center;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  z-index: 4;
+}
+
+.grass-bot{
+  width: 100%;
+  height: 50px; 
+  min-height: 100vh;
+  display: center;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  z-index: 3;
+}
