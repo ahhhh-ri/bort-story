@@ -126,6 +126,6 @@ function mousePressed() {
     climbClicked &&
     dist(mouseX, mouseY, x + spacing, bubbleY) < size / 2
   ) {
-    window.location.href = "https://trey0rizzo-spec.github.io/TrainWebsite/";
+    window.location.href = "https://trey0rizzo-spec.github.io/v2TrainWebsite/";
   }
 }
